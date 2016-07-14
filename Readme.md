@@ -19,7 +19,7 @@ Map the values of an object to an array.
 ```js
 var mapValues = require('@f/map-values')
 
-mapValues({a: 1, b: 2, c: 3}, add1) // -> [2, 3, 4]
+mapValues(add1, {a: 1, b: 2, c: 3}) // -> [2, 3, 4]
 
 function add1 (n) {
   return n + 1
